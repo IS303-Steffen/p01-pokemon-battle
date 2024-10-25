@@ -317,7 +317,7 @@ If you want to add some extra fun to your project for absolutely no extra points
 - call `optional_fun.battle_music()` at the start of the `pokemon_battle` function
 - call `optional_fun.attack_sfx()` at the start of the `attack` function
 - call `optional_fun.heal_sfx()` at the start of the `heal` function
-- call `optional_fun.victory_music()` at the end of the `pokemon_battle` function after the message about who won and who lost.
+- call `optional_fun.victory_music()` at the end of the `pokemon_battle` function after the message about who won and who lost. You might need to call it twice depending on how you wrote your code.
 
 
 
