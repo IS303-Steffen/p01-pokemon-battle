@@ -311,6 +311,14 @@ Then, your program should continually go through the following cycle until eithe
       Charmander has won!
       ```
 
+## Optional Fun
+If you want to add some extra fun to your project for absolutely no extra points:
+- add `import optional_fun` into your `p1_pokemon_battle.py` file
+- call `optional_fun.battle_music()` at the start of the `pokemon_battle` function
+- call `optional_fun.attack_sfx()` at the start of the `attack` function
+- call `optional_fun.heal_sfx()` at the start of the `heal` function
+- call `optional_fun.victory_music()` at the end of the `pokemon_battle` function after the message about who won and who lost.
+
 
 
 ## Example Output:
