@@ -301,9 +301,9 @@ Then, your program should continually go through the following cycle until eithe
       | 3     | Advantage message (`It’s super effective!` or `It’s not very effective…`) | Only if type advantage or disadvantage occurs |
       | 4     | `<damaged pokemon name> took <attack value> points of damage!` | Always                                        |
 
-6. Now, back in the `pokemon_battle` function, after the `attack` method is run, call the `input()` function with this prompt: `Press enter to proceed…` This doesn’t do anything other than pause the program until the user presses enter in the terminal. This just makes it easier to read what happened (and sort of mimics pressing a button to continue like in the original Pokémon games).
+6. Now, back in the `pokemon_battle` function, after the `attack` method is run, call the `input()` function with this prompt: `Press enter to proceed...` This doesn’t do anything other than pause the program until the user presses enter in the terminal. This just makes it easier to read what happened (and sort of mimics pressing a button to continue like in the original Pokémon games).
 7. Now, it is the opposing `Pokemon` object’s turn to choose a `Move`. Randomly select to either call `attack` with one of their 2 `Moves`, or call `heal` (e.g. there should be an equal chance for any of those 3 options to occur). Just remember that if attack is called, the your_pokemon object needs to be passed into attack instead of the opposing_pokemon (since you are reversing roles of who is attacking).
-8. Once the opposing `Pokemon` has attacked, make sure there is another `input` with `Press enter to proceed…` to give a pause before the whole thing starts over again. 
+8. Once the opposing `Pokemon` has attacked, make sure there is another `input` with `Press enter to proceed...` to give a pause before the whole thing starts over again. 
 9. Now you should start from step 1 again (displaying `get_info` from both `Pokemon`) until one of the `Pokemon`’s `hit_points` reaches 0.
     - When one of the Pokémon’s hit_points reaches 0, you’ll display text saying which Pokémon was defeated, and which won, like below: 
     - ```
