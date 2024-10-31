@@ -1,5 +1,4 @@
 import sys, subprocess, os, random, time, platform
-import pygame
 
 ################
 ## SKIP THIS####
