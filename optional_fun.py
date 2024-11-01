@@ -1,8 +1,8 @@
 import sys, subprocess, os, random, time, platform
 
-################
-## SKIP THIS####
-################
+##########################################
+# SET UP, INSTALLS PYGAME ON THE FIRST RUN
+##########################################
 def clear_screen():
     """
     Clears the terminal screen to make it easier to follow along with code.
@@ -27,12 +27,12 @@ except ImportError:
 # Initialize the mixer
 pygame.mixer.init()
 
-clear_screen()
+clear_screen() # pygame always starts with a little message, so this just gets rid of it.
 
 
-###############################################
-# PUT THIS AT THE START OF YOUR BATTLE FUNCTION
-###############################################
+################################################
+# CALL THIS AT THE START OF YOUR BATTLE FUNCTION
+################################################
 
 def battle_music():
     # Define the path to the media file
@@ -43,9 +43,9 @@ def battle_music():
     pygame.mixer.music.set_volume(0.5)
     pygame.mixer.music.play(-1)  # Use -1 to loop indefinitely
 
-###############################################
-# PUT THIS AT THE START OF YOUR ATTACK FUNCTION
-###############################################
+################################################
+# CALL THIS AT THE START OF YOUR ATTACK FUNCTION
+################################################
 
 # if you are really bored, you can make this match the attack chosen instead
 # of choosing a random one.
@@ -72,9 +72,9 @@ def attack_sfx():
     sound_effect.set_volume(.7)
     sound_effect.play()  # Play sound effect on a separate channel without interrupting the background music
 
-#############################################
-# PUT THIS AT THE START OF YOUR HEAL FUNCTION
-#############################################
+##############################################
+# CALL THIS AT THE START OF YOUR HEAL FUNCTION
+##############################################
 
 def heal_sfx():
     # Define the path to the media file
@@ -85,9 +85,9 @@ def heal_sfx():
     sound_effect.set_volume(.8)
     sound_effect.play()  # Play sound effect on a separate channel without interrupting the background music
 
-#################################################################################
-# PUT THIS AT THE VERY END OF YOUR BATTLE FUNCTION AFTER THE DEFEATED/WON MESSAGE
-#################################################################################
+##################################################################################
+# CALL THIS AT THE VERY END OF YOUR BATTLE FUNCTION AFTER THE DEFEATED/WON MESSAGE
+##################################################################################
 def victory_music():
     # Define the path to the media file
     media_path = os.path.join(os.path.dirname(__file__), 'media', '1-16 Victory (Vs Trainer).mp3')
