@@ -1,9 +1,9 @@
 #### Project 1
 # Pokémon Battle
 - This is a group project. Through GitHub Classroom you should have created a shared GitHub repository with your group members, so as long as you upload your finished code to that group repository, each member in your team will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit.
-- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. After you turn in your code, a combination of autograding and manual grading will be done (meaning partial credit may be given for certain requirements).
+- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements).
 
-- You will expand on the work you did in “A8 – Pokémon and Move Classes”. In that assignment you created 3 `Pokemon` objects and 9 `Move` objects. You’ll reuse the 9 `Move` objects exactly as you already made them. Then, you’ll expand on the 3 `Pokemon` objects so that each `Pokemon` object stores a list of `Move` objects. Then, you’ll choose 2 `Pokemon` to “battle” with their `Moves` until one of them runs out of hit points.
+- You will expand on the work you did in the “Pokémon and Move Classes” assignment. In that assignment you created 3 `Pokemon` objects and 9 `Move` objects. You’ll reuse the 9 `Move` objects exactly as you already made them. Then, you’ll expand on the 3 `Pokemon` objects so that each `Pokemon` object stores a list of `Move` objects. Then, you’ll choose 2 `Pokemon` to “battle” with their `Moves` until one of them runs out of hit points.
   - As with the previous assignment, you don’t have to have any prior knowledge of Pokémon, but if you didn't watch this short video last time, it may help you to <a href="https://www.youtube.com/clip/Ugkx_pVqGoZu4Vx3ux5fjGtyF28lin6_e-qW">watch this clip</a> for an idea of what Pokémon interactions are like.
   - You’ll be doing a simplified version of the logic going on in the previous video. <a href="https://www.youtube.com/watch?v=1zNEoJeFW9E">Here is an example of me running the program </a> (without showing the code) so you can see what running it looks like.
 
@@ -15,6 +15,8 @@
 - random
 
 ## Classes Required:
+I list out all the classes here for reference. However, I recommend you just start with the "Logical Flow" section of the instructions and update/write your classes as you go, rather than trying to write all your classes before any of the other logic. But do whatever feels natural to you.
+
 #### Move
 > *NOTE: This class is the EXACT same as in your previous assignment.*
 - Instance Variables:
@@ -79,7 +81,7 @@
 
 The project is split up into 4 parts, with part 4 being the longest (so plan accordingly). The instructions will tell you what the code should accomplish but won’t always tell you how to do it. There almost always multiple ways to accomplish each of the requirements. All that matters is you fulfill the listed requirements.
 
-To not overcomplicate the project, you do not need to handle any exceptions (meaning you can assume the user will always input valid options). However, one design principle you *must* follow is that none of your functions (which includes methods) can reference global variables (which are variables made outside the function). Functions should only reference parameters passed in as arguments (which for methods, includes variables you access through self) or any variables that you make inside the function.
+To not overcomplicate the project, you do not need to handle any errors (meaning you can assume the user will always input valid options). However, one design principle you *must* follow is that none of your functions (which includes methods) can reference global variables (which are variables made outside the function). Functions should only reference parameters passed in as arguments (which for methods, includes variables you access through self) or any variables that you make inside the function.
 
 
 ### Part 1: Creating Move objects
@@ -319,10 +321,11 @@ If you want to add some extra fun to your project for absolutely no extra points
 - call `optional_fun.heal_sfx()` at the start of the `heal` function
 - call `optional_fun.victory_music()` at the end of the `pokemon_battle` function after the message about who won and who lost. You might need to call it twice depending on how you wrote your code.
 
+## Grading Rubric:
+See Rubric.md. Remember to right click and select "Open Preview" to view the file in a nice format. The TAs will update this file with your grade when they are done grading your submission.
 
 
 ## Example Output:
-
 You can watch the video at the top of the file for an example of running the code. Because a lot of the code logic is randomly determined, each run will look different. Below is an example that contains a critical hit, as well as type advantages and disadvantages:
 
 ```
@@ -443,96 +446,8 @@ Charmander has won!
 ```
 
 
-## Rubric:
 
-<table border="1" style="margin-left: auto; margin-right: auto;">
-  <thead>
-    <tr>
-      <th>Requirement</th>
-      <th>Points</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="3"><h3>Part 1</h3></td>
-    </tr>
-    <tr>
-      <td>Move class works as specified in previous assignment</td>
-      <td>5</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>All 9 Move objects are created, and their get_info method is printed out.</td>
-      <td>5</td>
-      <td>· -1 for each object not created<br>· -2 if get_info not printed out for each object</td>
-    </tr>
-    <tr>
-      <td colspan="3"><h3>Part 2</h3></td>
-    </tr>
-    <tr>
-      <td>Pokémon class works as specified in previous assignment, but with list_of_moves instance variable added</td>
-      <td>5</td>
-      <td>· -2 if list_of_moves isn't added</td>
-    </tr>
-    <tr>
-      <td>All 3 Pokémon objects created</td>
-      <td>5</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2 Move objects assigned to each Pokémon object, according to stated rules</td>
-      <td>15</td>
-      <td>· -3 if more or fewer than 2 moves are added.<br>· -5 if the assigned move isn't either Normal type or matches the elemental type of the Pokémon<br>· -3 if the move can be added twice to any Pokémon</td>
-    </tr>
-    <tr>
-      <td>Pokémon and their assigned Moves printed out</td>
-      <td>2</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><h3>Part 3</h3></td>
-    </tr>
-    <tr>
-      <td>Pokémon printed out and user can select 2 Pokémon</td>
-      <td>8</td>
-      <td>· -4 if you can't select 2 Pokémon using an inputted number<br>· -3 if it doesn't print out like the example</td>
-    </tr>
-    <tr>
-      <td colspan="3"><h3>Part 4</h3></td>
-    </tr>
-    <tr>
-      <td>Pokémon class: display_choices</td>
-      <td>10</td>
-      <td>· -5 if it doesn't print each move's get_info and a number 1 or 2<br>· -2 if it doesn't print a line for healing.<br>· -2 if it references global variables</td>
-    </tr>
-    <tr>
-      <td>Pokémon class: attack</td>
-      <td>20</td>
-      <td>· -3 if an error in generating the base attack value<br>· -7 if the logic for calculating type advantage just isn't there or is wildly wrong<br>· -2 if the logic for calculating type advantage is mostly correct but has small errors<br>· -4 if logic is missing for 6% chance of a critical hit.<br>· -5 if the final value for attack value isn't correctly calculated for reasons not already mentioned (e.g. the logic of type advantages and critical hits was correct, but they did something wrong after or before)<br>· -1 if the calculated attack value isn't rounded<br>· -2 if the calculated attack value isn't subtracted from the opponent hit points<br>· -2 for each message in the message table that doesn't print correctly<br>· -4 if it references global variables</td>
-    </tr>
-    <tr>
-      <td>Custom function: pokemon_battle</td>
-      <td>20</td>
-      <td>· -2 if it doesn't print out the opening lines<br>· -3 if it doesn't repeatedly print out the results of get_info after each Pokémon does an option.<br>· -5 if missing the option for the user to choose an attack/heal or it doesn't work properly<br>· -1 if it doesn't make the user press enter to proceed after each Pokémon does their options.<br>· -5 if the opposing Pokémon doesn't randomly choose among their 3 options and do one of those options<br>· -5 if it doesn't continually repeat until one Pokémon reaches 0 or below on their hit points<br>· -5 if it doesn't end once a Pokémon reaches 0 hit points<br>· -1 if it doesn't print out which Pokémon was defeated and which won.<br>· -4 if it references global variables</td>
-    </tr>
-    <tr>
-      <td>includes comments: name and description at the top, and comments throughout</td>
-      <td>3</td>
-      <td>· -1 if it didn't include their name<br>· -1 if it didn't include a project description<br>· -2 if it didn't include general comments. Err on the side of leniency</td>
-    </tr>
-    <tr>
-      <td>fily uploaded properly to GitHub</td>
-      <td>2</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Total</td>
-      <td>100</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+
 
 
 
