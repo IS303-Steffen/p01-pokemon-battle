@@ -1,7 +1,7 @@
 #### Project 1
 # Pokémon Battle
 - This is a group project. Through GitHub Classroom you should have created a shared GitHub repository with your group members, so as long as you upload your finished code to that group repository, each member in your team will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit.
-- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements).
+- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements). The TAs will update the `Rubric.md` file with your grade and any comments that they have.
 
 - You will expand on the work you did in the “Pokémon and Move Classes” assignment. In that assignment you created 3 `Pokemon` objects and 9 `Move` objects. You’ll reuse the 9 `Move` objects exactly as you already made them. Then, you’ll expand on the 3 `Pokemon` objects so that each `Pokemon` object stores a list of `Move` objects. Then, you’ll choose 2 `Pokemon` to “battle” with their `Moves` until one of them runs out of hit points.
   - As with the previous assignment, you don’t have to have any prior knowledge of Pokémon, but if you didn't watch this short video last time, it may help you to <a href="https://www.youtube.com/clip/Ugkx_pVqGoZu4Vx3ux5fjGtyF28lin6_e-qW">watch this clip</a> for an idea of what Pokémon interactions are like.
