@@ -1,14 +1,16 @@
-#### Project 1
+#### Project 01
 # Pokémon Battle
-- This is a group project. Through GitHub Classroom you should have created a shared GitHub repository with your group members, so as long as you upload your finished code to that group repository, each member in your team will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit.
-- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements). The TAs will update the `Rubric.md` file with your grade and any comments that they have.
+- This is a team project. Through GitHub Classroom you should have created a shared GitHub repository with your teammates. As long as you upload your finished code to that team repository, each team member will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit (if you're in a team by yourself, you don't need to ).
+
+- I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. It is important for you to be able to determine whether a program you write meets requirements (in the real world there won't be pre-written tests to tell you if you did your job right).
+  - The disadvantage is that it takes some time to grade your assignment. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements). The TAs will update the `RUBRIC.md` file with your grade and any comments that they have. Give us about 2 weeks after the due date to get the grades in.
 
 - You will expand on the work you did in the “Pokémon and Move Classes” assignment. In that assignment you created 3 `Pokemon` objects and 9 `Move` objects. You’ll reuse the 9 `Move` objects exactly as you already made them. Then, you’ll expand on the 3 `Pokemon` objects so that each `Pokemon` object stores a list of `Move` objects. Then, you’ll choose 2 `Pokemon` to “battle” with their `Moves` until one of them runs out of hit points.
   - As with the previous assignment, you don’t have to have any prior knowledge of Pokémon, but if you didn't watch this short video last time, it may help you to <a href="https://www.youtube.com/clip/Ugkx_pVqGoZu4Vx3ux5fjGtyF28lin6_e-qW">watch this clip</a> for an idea of what Pokémon interactions are like.
   - You’ll be doing a simplified version of the logic going on in the previous video. <a href="https://www.youtube.com/watch?v=1zNEoJeFW9E">Here is an example of me running the program </a> (without showing the code) so you can see what running it looks like.
+- Place your code in the `p01_pokemon_battle.py` file. Optionally, you can create any new .py files you want to place functions or classes in. If you do so, just make sure you import those files into `p01_pokemon_battle.py`
 
-- Place your code in the `p1_pokemon_battle.py` file. Optionally, you can create any new .py files you want to place functions or classes in. If you do so, just make sure you import those files into `p1_pokemon_battle.py`
-- This project is meant to be a challenge and is a **significant** jump in difficulty from past assignments. It requires a solid understanding of object-oriented programming, storing objects in lists, using loops, conditionals, and passing data in and out of functions. I’m confident you can do this. Please reach out to the TAs or professor when you come across any significant roadblock.
+- This project is meant to be a challenge and is a **significant** jump in difficulty from previous assignments. It requires a solid understanding of object-oriented programming, storing objects in lists, using loops, conditionals, and passing data in and out of functions. I’m confident you can do this. Please reach out to the TAs or professor when you come across any significant roadblock.
 
 
 ## Libraries Required:
@@ -47,7 +49,8 @@ I list out all the classes here for reference. However, I recommend you just sta
     - represents the health of the pokemon
   - ***NEW*** `list_of_moves` (list) 
     - Stores an empty list by default, but will be filled by `Move` objects later in your code.
-      - Note: Do NOT make an empty list a default value of a parameter. Just create it in your constructor like this: `self.list_of_moves = []`. Making an empty list a default parameter causes all created objects to reference the same empty list.
+      - Note: Do NOT make an empty list a default value of a parameter. Just create it in your constructor like this: `self.list_of_moves = []`.
+        - Making an empty list a default parameter causes all created objects to reference the same empty list.
 - Methods:
   - `__init__`
     - The constructor / initializer!
@@ -164,7 +167,7 @@ Squirtle was assigned:
 ---
 
 Now, your program should print out a number alongside all the available `Pokemon` for the user to choose the `Pokemon` they want to battle with, followed by another display of the `Pokemon` that are left to choose for your opponent. The user should enter a number to choose their `Pokemon` and their opponent. Keep track of which `Pokemon` is the user’s chosen pick, and which is the opponent for Part 4.
-- Optional Hint: You may find the `enumerate()` function useful here. <a href="https://chat.openai.com/share/eebd99ee-45af-430c-8ad9-89a4cc0b8b8a"> Click here for an example. </a> But like always, there are many ways to code something so use what makes sense to you.
+- Optional Hint: You may find the `enumerate()` function useful here. But like always, there are many ways to code something so use what makes sense to you.
 
 Here's an example of me choosing Charmander for my `Pokemon` and Bulbasaur as the opponent `Pokemon`:
 
@@ -306,7 +309,7 @@ Then, your program should continually go through the following cycle until eithe
 6. Now, back in the `pokemon_battle` function, after the `attack` method is run, call the `input()` function with this prompt: `Press enter to proceed...` This doesn’t do anything other than pause the program until the user presses enter in the terminal. This just makes it easier to read what happened (and sort of mimics pressing a button to continue like in the original Pokémon games).
 7. Now, it is the opposing `Pokemon` object’s turn to choose a `Move`. Randomly select to either call `attack` with one of their 2 `Moves`, or call `heal` (e.g. there should be an equal chance for any of those 3 options to occur). Just remember that if attack is called, the your_pokemon object needs to be passed into attack instead of the opposing_pokemon (since you are reversing roles of who is attacking).
 8. Once the opposing `Pokemon` has attacked, make sure there is another `input` with `Press enter to proceed...` to give a pause before the whole thing starts over again. 
-9. Now you should start from step 1 again (displaying `get_info` from both `Pokemon`) until one of the `Pokemon`’s `hit_points` reaches 0.
+9. Now you should start from step 1 again (displaying `get_info` from both `Pokemon`) until one of the `Pokemon`’s `hit_points` reaches 0 (or below).
     - When one of the Pokémon’s hit_points reaches 0, you’ll display text saying which Pokémon was defeated, and which won, like below: 
     - ```
       Bulbasaur has been defeated.
@@ -315,14 +318,14 @@ Then, your program should continually go through the following cycle until eithe
 
 ## Optional Fun
 If you want to add some extra fun to your project for absolutely no extra points:
-- add `import optional_fun` into your `p1_pokemon_battle.py` file
+- add `import optional_fun` into your `p01_pokemon_battle.py` file
 - call `optional_fun.battle_music()` at the start of the `pokemon_battle` function
 - call `optional_fun.attack_sfx()` at the start of the `attack` function
 - call `optional_fun.heal_sfx()` at the start of the `heal` function
 - call `optional_fun.victory_music()` at the end of the `pokemon_battle` function after the message about who won and who lost. You might need to call it twice depending on how you wrote your code.
 
-## Grading Rubric:
-See Rubric.md. Remember to right click and select "Open Preview" to view the file in a nice format. The TAs will update this file with your grade when they are done grading your submission.
+## Rubric:
+Remember there are no automated tests for projects. See RUBRIC.md. Remember to right click and select "Open Preview" to view the file in a nice format. The TAs will update this file with your grade and any comments they have when they are done grading your submission.
 
 
 ## Example Output:

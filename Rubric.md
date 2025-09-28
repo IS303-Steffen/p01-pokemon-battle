@@ -66,7 +66,7 @@
     </tr>
     <tr>
       <td>11</td>
-      <td>includes comments: name and description at the top, and comments throughout</td>
+      <td>includes comments</td>
       <td>3</td>
     </tr>
     <tr>
@@ -105,7 +105,7 @@
 7. #### Pokémon printed out and user can select 2 Pokémon
     - 8 points
         - -4 if you can't select 2 pokemon using an inputted number
-        - -3 if it doesn't print out by like the example
+        - -3 if it doesn't print out like the example (the formatting doesn't need to be exact though)
 8. #### Pokémon class: display_choices
     - 10 points
         - -5 if it doesn't print each move's get_info and a number 1 or 2
@@ -134,10 +134,9 @@
         - -1 if it doesn't print out which pokemon was defeated and which won.
         - -4 if it references global variables
 
-11. #### includes comments: name and description at the top, and comments throughout
+11. #### includes comments
     - 3 points
-        - -1 if it didn't include their name
-        - -2 if it didn't include general comments. Err on the side of leniency
+        - -3 if it didn't include general comments. Err on the side of leniency
 
 12. #### File uploaded properly to GitHub
     - 2 points

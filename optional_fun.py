@@ -84,7 +84,7 @@ def attack_sfx():
 
 # ============================================
 # CALL THIS AT THE START OF YOUR HEAL FUNCTION
-# ==============================================
+# ============================================
 
 def heal_sfx():
     # Define the path to the media file
