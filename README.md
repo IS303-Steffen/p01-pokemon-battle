@@ -1,6 +1,6 @@
 #### Project 01
 # Pokémon Battle
-- This is a team project. Through GitHub Classroom you should have created a shared GitHub repository with your teammates. As long as you upload your finished code to that team repository, each team member will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit (if you're in a team by yourself, you don't need to ).
+- This is a team project. Through GitHub Classroom you should have created a shared GitHub repository with your teammates. As long as you upload your finished code to that team repository, each team member will get credit. You will also need to fill out a peer review survey on Learning Suite to recieve credit (if you're in a team by yourself, you don't need to).
 
 - I do not provide automated tests for projects. You will need to determine yourself whether the code meets the requirements provided in the rubric. It is important for you to be able to determine whether a program you write meets requirements (in the real world there won't be pre-written tests to tell you if you did your job right).
   - The disadvantage is that it takes some time to grade your assignment. After you turn in your code, your code will be manually graded (meaning partial credit may be given for certain requirements). The TAs will update the `RUBRIC.md` file with your grade and any comments that they have. Give us about 2 weeks after the due date to get the grades in.
