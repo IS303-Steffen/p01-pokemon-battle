@@ -33,7 +33,10 @@ try:
     import pygame
 except ImportError:
     print("Pygame is not installed. Installing now...")
-    install('pygame')
+    try:
+        install('pygame') # try to install the normal pygame
+    except:
+        install('pygame-ce') # if that fails, try and install the community edition.
     import pygame  # Try importing again after installation
 
 # Initialize the mixer
